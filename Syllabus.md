@@ -1,7 +1,7 @@
 # **MEAN (Mongo, Express, Angular, Node) - Syllabus**
 This syllabus is a generic outline of the broad topics and potential order that they will be covered but is subject to change based on student interest, velocity, and time constraints.
 
-## (Order Undetermined and used throughout) AI / LLMs
+## AI / LLMs (Order undetermined, used throughout)
 1.  Privacy, safety, and security warnings
 2.  The developer's responsibility
 3.  What it's good at
