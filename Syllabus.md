@@ -1,6 +1,21 @@
 # **MEAN (Mongo, Express, Angular, Node) - Syllabus**
 This syllabus is a generic outline of the broad topics and potential order that they will be covered but is subject to change based on student interest, velocity, and time constraints.
 
+## (Order Undetermined and used throughout) AI / LLMs
+1.  Privacy, safety, and security warnings
+2.  The developer's responsibility
+3.  What it's good at
+   1. Examples
+5.  What it's bad at
+   2. Examples
+6. Types and usage
+   1. Research and planning
+   2. Code suggestions
+   3. Agentic usage
+   4. MCPs (Model Context Protocol)
+   5. RAG (Retrieval Augmentated Generation)
+
+
 ## Lesson 1 - Introduction
 1. Introduction to the V8 engine, Node.js, and Javascript.  
    1. Who uses it?  
