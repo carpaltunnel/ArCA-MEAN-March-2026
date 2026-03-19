@@ -22,6 +22,18 @@ const name = 'user';
 console.log(`Hello ${name}, the answer to 1 + 1 is ${theAnswer}, and 2 * 3 = ${2 * 3}`); // Hello user, the answer to 1 + 1 is 2, and 2 * 3 = 6
 ```
 
+### Escape Sequences 
+Like most other languages, escape sequences for "special" characters are represented by a backslash and a letter.
+
+The ones we use most often, if not exclusively are : 
+1. `\n` - New line
+2. `\t` - Tab
+
+So if you wanted to insert a new line in a string you could do : 
+```javascript
+console.log('This is line one \n This is line two');
+```
+
 ### Commonly Used String Methods
 1. .length
 2. .substr() / .substring() / .slice()
