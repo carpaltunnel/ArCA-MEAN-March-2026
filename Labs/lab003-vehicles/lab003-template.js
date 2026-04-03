@@ -96,7 +96,7 @@ const salvageVINs = [
 
 // Lab requirements (applied in any order you choose): 
 // 1.  Create new arrays for each "Make" of vehicle.  
-//     a.  Each new array should only contain vehicles of the same make and the array variable should be named appropriately (EG: teslaVehicles)
+//     a.  Each new array should only contain vehicles of the same make and the array variable should be named appropriately (EG: the array containing Ford vehicles should have a name similar to "Ford")
 // 2.  Order each new Make array by vehicle year in ascending order
 // 3.  Add recall reason from the recallList to each vehicle (based on VIN) as "recallReason"
 // 4.  Remove any vehicles that have a salvage title (based on VIN)
