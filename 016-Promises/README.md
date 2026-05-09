@@ -315,10 +315,10 @@ try {
 ### Core Module Promises
 Core modules provide a Promise API where applicable.  As an example, we'll look at *fs.promises*.
 
-To utilize the FS Promise API, *require('fs/promises)* instead of *require('fs')*.  Then, treat it like any other promisified function :
+To utilize the FS Promise API, import from *'fs/promises* instead of *'fs'*.  Then, treat it like any other promisified function :
 
 ```javascript
-const fs = require('fs/promises');
+import fs from 'fs/promises';
 
 const testFile = './test.txt';
 
@@ -369,12 +369,3 @@ const runLogic = async () => {
 // Execute everything
 runLogic();
 ```
-
-TODO : fs.promises : require('fs').promises or require('fs/promises').
-TODO : Cover previous FS logic but promisified.
-TODO : fs.promises : require('fs').promises or require('fs/promises').
-TODO : Cover previous FS logic but promisified.
-TODO : fs.promises : require('fs').promises or require('fs/promises').
-TODO : Cover previous FS logic but promisified.
-TODO : fs.promises : require('fs').promises or require('fs/promises').
-TODO : Cover previous FS logic but promisified.

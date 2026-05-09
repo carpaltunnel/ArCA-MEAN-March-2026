@@ -301,7 +301,7 @@ try {
         <h1>fs.promises</h1>
         <p>The <code>fs</code> core module provides a promises API at <code>fs.promises</code> that will promisify all functions.</p>
 
-        <pre><code class="javascript">const fsPromise = require('fs/promises');
+        <pre><code class="javascript">import fs from 'fs/promises';
 const testFile = './test.txt';
 const fileWritePromise = async data => (await fs.writeFile(testFile, data));
 const fileReadPromise = async () => (await fs.readFile(testFile, { encoding:'utf8', flag:'r' }));

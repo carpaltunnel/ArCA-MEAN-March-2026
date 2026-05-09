@@ -1,7 +1,7 @@
-const fs = require('fs');
-const { Stream } = require('stream');
-const { isMainThread } = require('worker_threads');
-const zlib = require('zlib');
+import fs from 'fs';
+import Stream  from 'stream';
+import { isMainThread } from 'worker_threads';
+import zlib from 'zlib';
 
 const testFile = './test.txt';
 const testFileGz = './test.txt.gz';

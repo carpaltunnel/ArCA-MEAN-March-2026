@@ -62,7 +62,7 @@ Event handlers are most commonly defined by using the *.on('event-name', functio
 The *fs.watch()* function of the File System core module extends the EventEmitter class, returns a fs.FSWatcher object, and emits a *change* event when the file being watched is modified.  To trigger custom logic based on this event you must attach a listener by using the *.on(event, handlerFunction)* function.
 
 ```javascript
-const fs = require('fs');
+import fs from 'fs';
 const testFile = './test.txt';
 // "watch" the testFile
 const watcher = fs.watch(testFile);
@@ -85,7 +85,7 @@ You'll notice that, unlike our previous scripts, this one does not exit immediat
 The opposite of adding a listener with *.on()* is removing a listener with *.off(event, handlerFunction)*.  For this to function correctly, and for readability, you need to use named functions rather than anonymous functions.  You must specify the event you wish to remove a listener from as well as the exact same function that was added as a handler.
 
 ```javascript
-const fs = require('fs');
+import fs from 'fs';
 const testFile = './test.txt';
 
 // Define the 'change' handler function
@@ -111,7 +111,7 @@ watcher.on('change', changeHandler);
 
 While *.on()* will execute every time a defined event occurs, you can also use *.once()* to execute your handler code only one time.  After execution, the listener is automatically removed but the emitter remains.
 ```javascript
-const fs = require('fs');
+import fs from 'fs';
 const testFile = './test.txt';
 
 // Write data to file
@@ -143,7 +143,7 @@ I recommend you review the [full documentation](https://nodejs.org/api/events.ht
 Event Emitters are the opposite of listeners.  Emitters are what generate the events that listeners consume and handle.
 
 ```javascript
-const EventEmitter = require('events');
+import EventEmitter from 'events';
 
 // Create a new EventEmitter
 const emitter = new EventEmitter();
@@ -173,7 +173,7 @@ Since we're covering core modules we'll use the core HTTP module here but there 
 
 A GET example :
 ```javascript
-const http = require('http');
+import http from 'http';
 http.get('http://nodejs.org/dist/index.json', (res) => {
   if (res.statusCode !== 200) {
     console.log(`Error : Status code ws ${res.statusCode}`);
@@ -190,7 +190,7 @@ http.get('http://nodejs.org/dist/index.json', (res) => {
 
 A POST example : 
 ```javascript
-const http = require('http');
+import http from 'http';
 
 const postData = JSON.stringify({
   'hi': 'Hi there httpbin!',

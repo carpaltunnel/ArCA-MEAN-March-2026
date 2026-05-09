@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const getUrl = async (url) => {
   const result = await axios.get(url);

@@ -1,4 +1,4 @@
-// The process module is a global object and therefore does not require a ... require()
+// The process module is a global object and therefore does not require a import
 let startingDir = null;
 
 startingDir = process.cwd();

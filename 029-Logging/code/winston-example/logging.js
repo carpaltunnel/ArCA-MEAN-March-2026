@@ -29,7 +29,7 @@ logger.warn('Warn level');
 logger.error('Error level');
 
 /*
-const DailyRotateFile = require('winston-daily-rotate-file');
+imoprt { DailyRotateFile } from 'winston-daily-rotate-file';
 logger.configure({
   level: 'verbose',
   transports: [

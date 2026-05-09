@@ -1,4 +1,4 @@
-const EventEmitter = require('events');
+import { EventEmitter } from 'events';
 
 // Create a new EventEmitter
 const emitter = new EventEmitter();

@@ -1,4 +1,4 @@
-const http = require('http');
+import http from 'http';
 
 http.get('http://httpbin.org/get', (res) => {
   if (res.statusCode !== 200) {

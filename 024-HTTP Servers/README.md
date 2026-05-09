@@ -2,7 +2,7 @@
 Now that we know the high points of HTTP, let's build an HTTP server with Node.js.
 
 ## http.createServer()
-Creating a new HTTP server is extremely simple.  All you need to do is `require()` the HTTP module and call the `createServer()` function to get a new instance of an HTTP server.  Then, we can add Event Listeners for the events we care about that are emitted by the server and instruct it to start listening.
+Creating a new HTTP server is extremely simple.  All you need to do is `import` the HTTP module and call the `createServer()` function to get a new instance of an HTTP server.  Then, we can add Event Listeners for the events we care about that are emitted by the server and instruct it to start listening.
 
 ```javascript
 import http from 'http';

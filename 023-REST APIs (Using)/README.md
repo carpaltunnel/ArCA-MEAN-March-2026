@@ -24,7 +24,7 @@ https://musicbrainz.org/ws/2/artist/51b37017-859c-465e-8810-2d2dd41a401e?inc=rel
 There are many modules available for interacting with APIs over HTTP.  We talked briefly about the Node.js core modules `http` and `https` earlier so let's use them now.
 
 ```javascript
-const http = require('http');
+import http from 'http';
 http.get('http://nodejs.org/dist/index.json', (res) => {
   if (res.statusCode !== 200) {
     console.log(`Error : Status code ws ${res.statusCode}`);
@@ -41,7 +41,7 @@ http.get('http://nodejs.org/dist/index.json', (res) => {
 
 `get` is a convenience method that does some of the work for you.  For other methods, you have to do a bit more...
 ```javascript
-const http = require('http')
+import http from 'http';
 
 const data = JSON.stringify({
   widget: 'a brand new widget'

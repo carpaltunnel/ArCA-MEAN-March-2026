@@ -13,7 +13,7 @@ We're also going to start by looking only at synchronous and callback based func
 ## FS
 Below is a quick run through of common synchronous FS functions.  These examples still use CommonJS for simplicity because we haven't discussed **how** to make ESM imports work correctly - more on that in the NPM lesson. 
 ```javascript
-const fs = require('fs');
+import 'fs' from 'fs';
 
 const testDir = './';
 const testFile = './test.txt';

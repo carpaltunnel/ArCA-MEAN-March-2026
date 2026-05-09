@@ -58,8 +58,7 @@ Now, in a different file (let's say `test.js`) `require()` (CommonJS) or `import
 
 CommonJS : 
 ```javascript
-'use strict';
-cont Vehicle = require('./vehicle');
+const { Vehicle } from './vehicle';
 
 // Create instance of Vehicle and invoke constructor
 const myVehicle = new Vehicle('Tesla', 'S', 2020);
@@ -126,7 +125,7 @@ class GlobalSingleton {
   }
 }
 
-export default const Singleton = new GlobalSingleton();
+export const Singleton = new GlobalSingleton();
 ```
 
-Note that the `module.exports` is exporting an instance of GlobalSingleton.  Since the module is cached, the instance only gets created once and the single instance is always returned when the module is `require()`d.
+Note that the `export` is exporting an **instance** of GlobalSingleton.  Since the module is cached, the instance only gets created once and the single instance is always returned when the module is `import`d.

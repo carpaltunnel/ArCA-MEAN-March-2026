@@ -1,4 +1,4 @@
-const os = require('os');
+import os from 'os';
 
 console.log('Here we present a list of helpful OS properties and functions :');
 console.log(`\tArchitecture is : ${os.arch()}`);

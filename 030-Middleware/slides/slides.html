@@ -142,54 +142,15 @@
         <h1>Adding Middleware</h1>
         <p>Like we've seen with <code>body-parser</code> and <code>kraken</code>, you can add middleware with <code>app.use()</code></p>
         
-        <pre><code class="javascript">const bodyParser = require('body-parser')
-const app = require('express')();
-app.use(bodyParser.json());
+        <pre><code class="javascript">
+import express form 'express';
+const app = express();
+app.use(express.json());
         
         <div class="notes">
         </div>
     </div>
 
-    <div id="config-based-middleware" class="step slide" data-rel-x="2200" data-rel-y="0">
-        <h1>Config Based Middleware</h1>
-        <p>Additionally, you can add middleware based on your config.json</p>
-        
-        <pre><code class="javascript">{
-    "middleware": {
-        "json-body-parser": {
-            "enabled": true,
-            "priority": 20,
-            "module": {
-              "name": "body-parser",
-              "method": "json"
-            }
-          }
-    }
-}</code></pre>
-        
-        <div class="notes">
-        </div>
-    </div>
-
-    <div id="project-middleware" class="step slide" data-rel-x="2200" data-rel-y="0">
-        <h1>Config Based Custom Middleware</h1>
-        <p>If you're implementing your own middleware and it's not a separate dependency, you can configure it as so :</p>
-        
-        <pre><code class="javascript">{
-    "middleware": {
-        "checker": {
-            "enabled": true,
-            "priority": 10,
-            "router": "/widgets",
-            "module": {
-            "name": "path:middleware/checker"
-            }
-        }
-}</code></pre>
-        
-        <div class="notes">
-        </div>
-    </div>
 
     <!-- This last, empty "slide" is set to be very large using the data-scale attribute, 
          so that it covers all the other slides you just saw. 
