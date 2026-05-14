@@ -54,8 +54,8 @@ The `find()` and `findOne()` functions take two parameters.  The first is your f
 
 ```javascript
  db.collection('testCollection').find({ color: 'blue' }, {
-   { sort: { name: 1 } },
-   { projection: { _id: 0 } }
+   sort: { name: 1 },
+   projection: { _id: 0 }
  });
 ```
 

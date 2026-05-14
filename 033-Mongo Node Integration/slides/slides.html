@@ -136,8 +136,8 @@ console.log(`Inserted ${multiInsertResult.insertedCount} records`);</code></pre>
         <p>The find() and findOne() functions take two parameters. The first is your filter and the second is "options". The option parameter is an object that can contain your "sort" and "projection" decisions for the query. </p>
         
         <pre><code class="javascript"> db.collection('testCollection').find({ color: 'blue' }, {
-    { sort: { name: 1 } },
-    { projection: { _id: 0 } }
+    sort: { name: 1 },
+    projection: { _id: 0 }
 });</code></pre>
 
     <code>findOne()</code> returns an object, <code>find()</code> returns a cursor that can be iterated with next(), toArray(), or forEach().
