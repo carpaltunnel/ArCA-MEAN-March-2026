@@ -93,7 +93,7 @@ In the lesson on Express, we talked about how to create resources that will be i
 ## Pooling
 Connection pooling is an approach where we create one or multiple database connections in a "pool" and keep them alive.  Then, whenever a part of our application needs a connection it simply requests one from the pool.  Since these connections are kept alive, we avoid the initial overhead of establishing a new connection every time we need one, plus destroying them when we're done with them.  This can also reduce load on the database itself since it isn't constantly having to create and destroy connections on the server side.  However, it does have the additional (small) load of having to maintain connections that may not actually be in use at any given time.
 
-The Mongo driver supports connection pooling by default using the `poolSize` parameter : 
+The Mongo driver supports connection pooling by default using the `minPoolSize` and `maxPoolSize` parameters : 
 ```javascript
-MongoClient.connect('mongodb://localhost:27017/test', { poolSize: 10 });
+MongoClient.connect('mongodb://localhost:27017/test', { minPoolSize: 2, maxPoolSize: 10 });
 ```

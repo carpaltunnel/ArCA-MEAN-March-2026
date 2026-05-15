@@ -201,7 +201,7 @@ console.log(`Inserted ${multiInsertResult.insertedCount} records`);</code></pre>
         <h1>Connection Pooling</h1>
         <p>Connection pooling is an approach where we create one or multiple database connections in a "pool" and keep them alive. Then, whenever a part of our application needs a connection it simply requests one from the pool.</p>
         
-        <pre><code class="javascript">MongoClient.connect('mongodb://localhost:27017/test', { poolSize: 10 });</code></pre>
+        <pre><code class="javascript">MongoClient.connect('mongodb://localhost:27017/test', { minPoolSize: 2, maxPoolSize: 10 });</code></pre>
         
         <div class="notes">
         </div>
